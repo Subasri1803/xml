@@ -1,0 +1,29 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT login (time)+>
+<!ATTLIST login
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT time (name,age,phn,email,language,occ)>
+<!ATTLIST time
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT age (#PCDATA)>
+<!ATTLIST age
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT phn (#PCDATA)>
+<!ATTLIST phn
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT language (#PCDATA)>
+<!ATTLIST language
+  xmlns CDATA #FIXED ''>

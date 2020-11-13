@@ -1,0 +1,27 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT story (user)+>
+<!ATTLIST story
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT user (name,journal,moral,email)>
+<!ATTLIST user
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT journal (#PCDATA)>
+<!ATTLIST journal
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT moral (#PCDATA)>
+<!ATTLIST moral
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email
+  xmlns CDATA #FIXED ''>
+
+

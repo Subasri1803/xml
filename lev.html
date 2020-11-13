@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<link href="style.css" rel="stylesheet"></link>
+<body>
+ <center><h1 style="color:green">StoryPad</h1></center>
+ <ul> 
+	     <li><a href="create.html">Create</a></li>
+		 <li><a href="index.html">Home</a></li>
+		  <li><a href="log.html">Login</a></li>
+	</ul>
+<h2 style = "color:#009900; font-size:50px;
+                font-style:italic; text-align:center;">json</h2>
+
+<p id="demo"></p>
+
+<script>
+var txt = '{"name":"subasri", "age":19, "journal":"general"}'
+var obj = JSON.parse(txt);
+
+document.getElementById("demo").innerHTML = obj.name + ", " + obj.age;
+
+</script>
+
+</body>
+</html>

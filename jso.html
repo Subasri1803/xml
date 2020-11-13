@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<link href="style.css" rel="stylesheet"></link>
+<body>
+ <center><h1 style="color:green">StoryPad</h1></center>
+ <ul> 
+	     <li><a href="create.html">Create</a></li>
+		 <li><a href="index.html">Home</a></li>
+		  <li><a href="log.html">Login</a></li>
+	</ul>
+<h2 style = "color:#009900; font-size:50px;
+                font-style:italic; text-align:center;">json-stringify</h2>
+
+<p id="demo"></p>
+
+<script>
+var obj = [{ name: "Subasri", age:19, journal: "comic" },
+{ name: "Saro", age:20, journal: "general"},
+{ name: "ree", age:21 ,journal: "romantic"},
+{ name: "Saro", age:22, journal: "horror"}];
+var myJSON = JSON.stringify(obj);
+document.getElementById("demo").innerHTML = myJSON;
+</script>
+
+</body>
+</html>

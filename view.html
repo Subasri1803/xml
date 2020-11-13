@@ -1,0 +1,41 @@
+<html>
+<link href="style.css" rel="stylesheet"></link>
+<body>
+ <center><h1 style="color:green">StoryPad</h1></center>
+	<ul> 
+	     <li><a href="create.html">Create</a></li>
+		 <li><a href="index.html">Home</a></li>
+		  <li><a href="log.html">Login</a></li>
+	</ul>
+<h3 style = "color:#009900; font-size:20px;
+                font-style:italic; text-align:center;">DOM</h3>
+<p id="demo"></p>
+
+<script>
+var text, parser, xmlDoc;
+
+text ="<story><user>" +
+"<name>subasri</name>" +
+"<moral>time waits for none</moral>" +
+"<journal>general</journal>" +
+"</user>"+
+"<user>" +
+"<name>saro</name>" +
+"<moral>never hurt anyone</moral>" +
+"<journal>romance</journal>" +
+"</user></story>";
+
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+
+document.getElementById("demo").innerHTML =
+xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+
+document.getElementById("demo").innerHTML =
+xmlDoc.getElementsByTagName("moral")[1].childNodes[0].nodeValue;
+
+</script>
+
+</body>
+</html>
+
